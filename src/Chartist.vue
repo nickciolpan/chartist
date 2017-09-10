@@ -50,7 +50,7 @@ export default {
     data: {
       deep: true,
       handler (newVal, oldVal) {
-        this.$nextTick(() => this.chart.update())
+        this.$nextTick(() => this.chart.update(newVal))
       }
     }
   }
